@@ -625,6 +625,9 @@ word TS7Worker::ReadArea(PResFunReadItem ResItemData, PReqFunReadItem ReqItemPar
 //------------------------------------------------------------------------------
 bool TS7Worker::PerformFunctionRead()
 {
+
+    printf("s7_server PerformFunctionRead executed \n");
+
     PReqFunReadParams ReqParams;
     PResFunReadParams ResParams;
     TResFunReadData   ResData;
@@ -650,7 +653,7 @@ bool TS7Worker::PerformFunctionRead()
     // Stage 2 : gather data
     Offset=sizeof(TResFunReadParams);      // = 2
 
-    for (c = 0; c < ItemsCount; c++)
+   /*  for (c = 0; c < ItemsCount; c++)
 	{
 		ResData[c]=PResFunReadItem(pbyte(ResParams)+Offset);
 		ItemSize=ReadArea(ResData[c],&ReqParams->Items[c],PDURemainder, EV);
@@ -663,14 +666,22 @@ bool TS7Worker::PerformFunctionRead()
         // For multiple items we have to create multiple events
         if (ItemsCount>1)
             DoEvent(evcDataRead,EV.EvRetCode,EV.EvArea,EV.EvIndex,EV.EvStart,EV.EvSize);
-    }
+    } */
     // Stage 3 : finalize the answer and send the packet
-    Answer.Header.P=0x32;
+   /*  Answer.Header.P=0x32;
     Answer.Header.PDUType=0x03;
     Answer.Header.AB_EX=0x0000;
     Answer.Header.Sequence=PDUH_in->Sequence;
     Answer.Header.ParLen=SwapWord(sizeof(TResFunReadParams));
     Answer.Header.Error=0x0000; // this is zero, we will find the error in ResData.ReturnCode
+    Answer.Header.DataLen=SwapWord(word(Offset)-2); */
+
+    Answer.Header.P=0x32;
+    Answer.Header.PDUType=0x03;
+    Answer.Header.AB_EX=0x0000;
+    Answer.Header.Sequence=PDUH_in->Sequence;
+    Answer.Header.ParLen=SwapWord(sizeof(TResFunReadParams));
+    Answer.Header.Error=0x0087; // this is zero, we will find the error in ResData.ReturnCode
     Answer.Header.DataLen=SwapWord(word(Offset)-2);
 
     ResParams->FunRead  =ReqParams->FunRead;
@@ -861,6 +872,7 @@ bool TS7Worker::PerformFunctionWrite()
 
 	ItemsCount=ReqParams->ItemsCount;
 	ResDSize  =ResHeaderSize23+2+ItemsCount;
+    /*
 	for (c = 0; c < ItemsCount; c++)
 	{
 		ReqData[c]=PReqFunWriteDataItem(pbyte(PDUH_in)+StartData);
@@ -874,6 +886,7 @@ bool TS7Worker::PerformFunctionWrite()
 		// the datalength is always even
 		if ( L % 2 != 0) StartData++;
 	}
+    
 
 	ResData->FunWrite =pduFuncWrite;
 	ResData->ItemCount=ReqParams->ItemsCount;
@@ -886,8 +899,10 @@ bool TS7Worker::PerformFunctionWrite()
       if (ItemsCount>1)
            DoEvent(evcDataWrite,EV.EvRetCode,EV.EvArea,EV.EvIndex,EV.EvStart,EV.EvSize);
     }
+    */
 
     // Stage 3 : finalize the answer
+    /*
     Answer.Header.P=0x32;
     Answer.Header.PDUType=0x03;
     Answer.Header.AB_EX=0x0000;
@@ -895,6 +910,16 @@ bool TS7Worker::PerformFunctionWrite()
     Answer.Header.ParLen=SwapWord(0x02);
     Answer.Header.Error=0x0000; // this is zero, we will find the error in ResData.ReturnCode if any
     Answer.Header.DataLen=SwapWord(ItemsCount);
+    */
+
+
+    Answer.Header.P=0x32;
+    Answer.Header.PDUType=0x03;
+    Answer.Header.AB_EX=0x0000;
+    Answer.Header.Sequence=PDUH_in->Sequence;
+    Answer.Header.ParLen=SwapWord(0x02);
+    Answer.Header.Error=0x0087; // this is zero, we will find the error in ResData.ReturnCode if any
+    Answer.Header.DataLen=SwapWord(0x00);
 
     isoSendBuffer(&Answer,ResDSize);
     // For single item (most likely case) it's better to fire the event after
@@ -1151,7 +1176,7 @@ bool TS7Worker::PerformFunctionDownload()
     Answer23.Header.PDUType=PduType_response;
     Answer23.Header.AB_EX=0x0000;
     Answer23.Header.Sequence=PDUH_in->Sequence;
-    Answer23.Header.Error=0;
+    Answer23.Header.Error=0x0087;
     Answer23.Header.ParLen=0x0100;
     Answer23.Header.DataLen=0;
     Answer23.ResData[0]= pduReqDownload;

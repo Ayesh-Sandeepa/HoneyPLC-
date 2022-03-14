@@ -1,3 +1,133 @@
 2020-09-19 21:39:24 Server started
 2020-09-19 21:39:33 [127.0.0.1] Client added
 2020-09-19 21:39:35 [127.0.0.1] Client disconnected by peer
+2022-01-17 15:55:42 Server started
+2022-01-17 16:00:57 [127.0.0.1] Client added
+2022-01-17 16:00:57 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:00:57 [127.0.0.1] Client disconnected by peer
+2022-01-17 16:07:55 Server Cannot start listener - Socket Error :  TCP : Permission denied
+2022-01-17 16:08:05 Server started
+2022-01-17 16:08:51 [127.0.0.1] Client added
+2022-01-17 16:08:51 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:08:51 [127.0.0.1] Client disconnected by peer
+2022-01-17 16:10:24 Server started
+2022-01-17 16:10:54 [127.0.0.1] Client added
+2022-01-17 16:10:55 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:10:55 [127.0.0.1] Client disconnected by peer
+2022-01-17 16:11:09 [127.0.0.1] Client added
+2022-01-17 16:11:09 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:11:09 [127.0.0.1] Client disconnected by peer
+2022-01-17 16:12:22 Server started
+2022-01-17 16:13:57 [127.0.0.1] Client added
+2022-01-17 16:13:58 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:13:58 [127.0.0.1] Client disconnected by peer
+2022-01-17 16:16:07 Server started
+2022-01-17 16:16:48 [127.0.0.1] Client added
+2022-01-17 16:16:48 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:16:48 [127.0.0.1] Client disconnected by peer
+2022-01-17 16:19:11 Server started
+2022-01-17 16:19:37 [127.0.0.1] Client added
+2022-01-17 16:19:37 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-17 16:19:37 [127.0.0.1] Client disconnected by peer
+2022-01-18 13:25:01 Server started
+2022-01-18 13:27:41 [127.0.0.1] Client added
+2022-01-18 13:27:41 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-18 13:27:41 [127.0.0.1] Client disconnected by peer
+2022-01-18 15:57:09 Server started
+2022-01-18 15:58:03 [127.0.0.1] Client added
+2022-01-18 15:58:03 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-18 15:58:03 [127.0.0.1] Client disconnected by peer
+2022-01-18 16:00:41 Server started
+2022-01-18 16:01:20 [127.0.0.1] Client added
+2022-01-18 16:01:21 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-18 16:01:21 [127.0.0.1] Client disconnected by peer
+2022-01-18 16:03:51 Server started
+2022-01-18 16:04:24 [127.0.0.1] Client added
+2022-01-18 16:04:24 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-18 16:04:24 [127.0.0.1] Client disconnected by peer
+2022-01-18 16:06:38 Server started
+2022-01-18 16:07:39 [127.0.0.1] Client added
+2022-01-18 16:07:39 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-18 16:07:40 [127.0.0.1] Client disconnected by peer
+2022-01-18 16:14:15 Server started
+2022-01-18 16:14:48 [127.0.0.1] Client added
+2022-01-18 16:14:48 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-01-18 16:14:48 [127.0.0.1] Client disconnected by peer
+2022-02-07 15:43:24 Server started
+2022-02-07 15:46:49 Server stopped
+2022-02-25 07:50:58 Server started
+2022-02-25 08:17:08 Server started
+2022-03-03 15:54:41 Server started
+2022-03-03 15:55:29 [127.0.0.1] Client added
+2022-03-03 15:55:29 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 15:55:29 [127.0.0.1] Client disconnected by peer
+2022-03-03 15:58:49 [127.0.0.1] Client added
+2022-03-03 15:58:49 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 15:58:50 [127.0.0.1] Block list requested --> OK
+2022-03-03 15:58:50 [127.0.0.1] Block of type DB list requested (start sequence) --> OK
+2022-03-03 15:58:50 [127.0.0.1] Client disconnected by peer
+2022-03-03 16:25:18 Server started
+2022-03-03 16:25:51 [127.0.0.1] Client added
+2022-03-03 16:25:52 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 16:25:52 [127.0.0.1] Block list requested --> OK
+2022-03-03 16:25:52 [127.0.0.1] Block of type DB list requested (start sequence) --> OK
+2022-03-03 16:25:52 [127.0.0.1] Client disconnected by peer
+2022-03-03 16:26:10 [127.0.0.1] Client added
+2022-03-03 16:26:10 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 16:26:35 [127.0.0.1] Download DB1000: Successful
+2022-03-03 16:26:35 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-03 16:26:36 [127.0.0.1] Download FC1000: Successful
+2022-03-03 16:26:36 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-03 16:26:36 [127.0.0.1] Upload OB1: Successful
+2022-03-03 16:26:36 [127.0.0.1] Client disconnected by peer
+2022-03-03 16:27:35 [127.0.0.1] Client added
+2022-03-03 16:27:35 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 16:27:54 [127.0.0.1] Download DB1000: Successful
+2022-03-03 16:27:54 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-03 16:27:54 [127.0.0.1] Download FC1000: Successful
+2022-03-03 16:27:54 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-03 16:27:54 [127.0.0.1] Upload [Unknown 0x00e1]32703: Successful
+2022-03-03 16:28:51 Server started
+2022-03-03 16:29:25 [127.0.0.1] Client added
+2022-03-03 16:29:25 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 16:29:25 [127.0.0.1] Block list requested --> OK
+2022-03-03 16:29:25 [127.0.0.1] Block of type DB list requested (start sequence) --> OK
+2022-03-03 16:29:25 [127.0.0.1] Client disconnected by peer
+2022-03-03 16:29:41 [127.0.0.1] Client added
+2022-03-03 16:29:42 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-03 16:29:51 [127.0.0.1] Download DB1000: Successful
+2022-03-03 16:29:51 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-03 16:29:51 [127.0.0.1] Download FC1000: Successful
+2022-03-03 16:29:51 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-03 16:29:51 [127.0.0.1] Upload [Unknown 0x0055]32526: Successful
+2022-03-04 09:38:31 Server started
+2022-03-04 09:50:34 [127.0.0.1] Client added
+2022-03-04 09:50:34 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-04 09:50:35 [127.0.0.1] Client disconnected by peer
+2022-03-04 09:58:09 Server started
+2022-03-04 09:59:09 [127.0.0.1] Client added
+2022-03-04 09:59:09 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-04 09:59:09 [127.0.0.1] Client disconnected by peer
+2022-03-04 10:00:39 [127.0.0.1] Client added
+2022-03-04 10:00:39 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-04 10:00:40 [127.0.0.1] Download DB1000: Successful
+2022-03-04 10:00:40 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-04 10:00:40 [127.0.0.1] Download FC1000: Successful
+2022-03-04 10:00:40 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-04 10:00:40 [127.0.0.1] Upload OB1: Successful
+2022-03-04 10:00:40 [127.0.0.1] Client disconnected by peer
+2022-03-04 10:29:09 Server started
+2022-03-04 10:29:56 [127.0.0.1] Client added
+2022-03-04 10:29:56 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-04 10:29:57 [127.0.0.1] Client disconnected by peer
+2022-03-04 10:30:25 [127.0.0.1] Client added
+2022-03-04 10:30:25 [127.0.0.1] The client requires a PDU size of 480 bytes
+2022-03-04 10:30:26 [127.0.0.1] Download DB1000: Successful
+2022-03-04 10:30:26 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-04 10:30:26 [127.0.0.1] Download FC1000: Successful
+2022-03-04 10:30:26 [127.0.0.1] CPU Control request : Block Insert or Delete --> OK
+2022-03-04 10:30:26 [127.0.0.1] Upload OB1: Successful
+2022-03-04 10:30:26 [127.0.0.1] Client disconnected by peer
+2022-03-04 14:48:38 Server started
+2022-03-04 14:49:40 [127.0.0.1] Client added
+2022-03-04 14:49:41 [127.0.0.1] The client requires a PDU size of 480 bytes

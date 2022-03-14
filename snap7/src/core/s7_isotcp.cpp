@@ -24,6 +24,8 @@
 |  If not, see  http://www.gnu.org/licenses/                                   |
 |=============================================================================*/
 #include "s7_isotcp.h"
+#include <stdio.h>
+
 //---------------------------------------------------------------------------
 TIsoTcpSocket::TIsoTcpSocket()
 {
@@ -247,6 +249,9 @@ int TIsoTcpSocket::isoConnect()
 //---------------------------------------------------------------------------
 int TIsoTcpSocket::isoSendBuffer(void *Data, int Size)
 {
+
+	printf("s7_isotcp isoSendBuffer executed \n");
+
 	int Result;
 	u_int IsoSize;
 
@@ -277,6 +282,7 @@ int TIsoTcpSocket::isoSendBuffer(void *Data, int Size)
             Result =SetIsoError(errIsoSendPacket);
 	}
 	else
+		printf("Theres a error in s7_isotcp isoSendBuffer");
 		Result =SetIsoError(errIsoInvalidDataSize );
 	return Result;
 }
